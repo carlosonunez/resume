@@ -1,100 +1,145 @@
-Johnny Coder
+Carlos Nunez
 ============
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+I'm passionate about automating everything to provide maximum business value with minimum
+engineering toil. I specialize in on-premise and infrastructure automation, systems operations,
+optimizing software build and release processes and helping teams release enterprise-scale software
+to customers more quickly. My goal is to build and manage engineering teams to tackle and solve
+large problems.
+
+I'm open to 80% travel but am not open to relocation.
+
+**GitHub**: https://github.com/carlosonunez
+
+**LinkedIn**: https://linkedin.com/in/carlosindfw
 
 ----
 
 Education
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+2005-2010
+:   **BEng, Computer Engineering**; Stevens Institute of Technology (Hoboken, NJ)
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+    * GPA: 3.66/4.0
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
-
-    *Minor: Awesomeology*
+Certifications
+--------------
+|                  |                                                   |                      |
+| :-------         | :-----------                                      | ------------:        |
+| **Cloud**        | **AWS Solutions Architect (Associate)**           | expires March 2020   |
+|                  | **Google Cloud Associate Cloud Engineer**         | expires October 2020 |
+| **Cloud-native** | **CNCF Certified Kubernetes Administrator (CKA)** | expires August 2020  |
 
 Experience
 ----------
 
-**Your Most Recent Work Experience:**
+2017-Present
+: **Contino**, _Technical Principal_
+: Dallas, TX (and other locations)
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+Focused on building high-performance, cross-functional teams to help large enterprises get to
+production more quickly and providing high-quality technical solutions to tough problems. I also
+helped level-up engineers through pairing on matters such as source control management with Git,
+local application testing with Docker and Docker Compose and deploying large applications to private
+and public clouds such as AWS and Pivotal Cloud Foundry (PCF).
 
-* First item
+* **Global Financial Services Provider**: Built a cross-functional engineering team to reduce
+  deployment time for a multi-million dollar application into production by several weeks.
+* **Global Consumer and Investment Bank**: Re-platformed a legacy Django web application to run in
+  Docker and Pivotal Cloud Foundry, reducing deployment time to production by several weeks.
+* **Large Brokerage and Institutional Investor**: Adapted Ruby, Rspec, Cucumber and Selenium Grid
+  to reduce deployment time of a major investment portfolio management web service to 10 minutes
+  from 22 weeks.
+* **Large Human Capital Management Provider**: Architected a portable monitoring-as-code platform
+  using Python, Bash and Datadog APIs.
+* **Community Outreach**: Authored several blog posts and talks for DevOpsDays conferences
+  throughout the United States.
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+5/2016-5/2017
+: **ThoughtWorks**, Senior Infrastructure Consultant
+: _Dallas, TX (and other locations)_
 
-**That Other Job You Had**
+At ThoughtWorks, I was responsible for providing high-quality engineering for large enterprises. My
+focus was largely on infrastructure automation and optimization in legacy, on-premise environments.
 
-Also with a short description.
+* **Global credit card issues and credit broker**: Architected infrastructure-as-code pattern for
+  website deployments using Terraform and Chef.
+* **Large national mortgage underwriting agency**: Delivered self-service environment creation
+  pipeline using Puppet, Ruby and vRealize Operations that reduced creation of development
+  environments by two weeks.
+* **Large statewide dental insurance provider**: Architected a containerized platform for a dental
+  claims processing engine with Rancher, Kubernetes, Docker and VMware vSphere.
+* Created hiring and recruiting standards for infrastructure and DevOps consultants for ThoughtWorks
+  nationwide.
 
-Technical Experience
+10/15-5/16
+: **Namely**, Site Reliability Engineer
+: _New York, NY_
+
+* Maintained 99% uptime and improved continuous deployment of Namely Payroll using Ansible, Octopus
+  Deploy, Bash, PowerShell and Jenkins.
+* Architected an Ansible playbook and Powershell/CloudFormation to migrate Namely's DMZ Active
+  Directory domain onto AWS EC2 and, afterwards, to Amazon Enterprise AD.
+* Architected a secure bastion host infrastructure for third-party benefit provider access into
+  Namely Payroll with Powershell, Ansible and read-only domain controllers.
+
+2/15-10/15
+: **Google**, Managed Systems SRE
+: _New York, NY_
+
+* Architected, developed and deployed an outage reporting dashboard using Drupal, SQL and Google's
+  visualization API that reduced our overdue backlog by over 60%.
+* Hardened remote access and arbitrary command execution into our platform by developing a
+  Kerberized Powershell endpoint for use with Rundeck, our infrastructure orchestration tool.
+* Reduced knowledge silos and improved visibility of our tools throughout Corporate Engineering by
+  creating documentation standards and writing several playbooks and runbooks.
+* Consulted and vetted vendor designs for integrating enterprise-level third-party software onto
+  Google infrastructure using Google best practices.
+
+Older Employment History
+-------------------------
+
+Consult my LinkedIn profile for more information.
+
+||||
+|:--|:--|:--|
+|**Two Sigma Investments**|_Systems Engineer_|2/2014 - 1/2015|
+|**Jane Street Group**|_Systems Engineer_|5/2012 - 1/2014|
+|**Macquarie Capital**|_Systems Engineer_|4/2009 - 4/2012|
+|**Medco (now Express Scripts)**|_Business Analyst_|5/2008 - 12/2008|
+|**BlackRock Solutions**|_Software Engineer (Co-op)_|9/2007 - 12/2007|
+|**Technology Analyst**|_BlackRock_|1/2007 - 5/2007|
+
+Community Contributions
 --------------------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+DevOpsDays Dallas 2019
+: Part of the organizing committee, where I helped review Calls for Proposals (CFPs), find speakers
+  and develop the run-of-show.
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+HashiCorp Users Group of Dallas/Fort Worth
+:   Founded the HashiCorp Users Group of Dallas/Fort Worth to bring users of HashiCorp
+    products, like Terraform, Consul and Vault, and talk about all things infrastructure, code
+    and DevOps.
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+LinkedIn Learning
+:   Authored and recorded _DevOps Foundations: Your First DevOps Project_, a course on Lynda on
+    using TDD, BDD, Docker and AWS to migrate a simple website, with tests, into the cloud.
 
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+Hobbies and Interests!
+----------------------
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+* Road biking
+* Reading and writing about tech
+* Writing software to automate my life!
+* Weightlifting
+* Breweries and wineries
+* Travel!
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
-
-Extra Section, Call it Whatever You Want
-----------------------------------------
-
-* Human Languages:
-
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+ADDRESS_AND_PHONE_NUMBER_INFO
