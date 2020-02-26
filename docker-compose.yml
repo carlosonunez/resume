@@ -8,4 +8,25 @@ services:
     container_name: resume-make
     image: resume-make
     volumes:
-      - .:/home/app/resume
+      - .:/home/app/resume:delegated
+  terraform:
+    image: hashicorp/terraform
+    environment:
+      - BUCKET
+      - AWS_REGION
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - TF_CLI_ARGS_plan="-input=false"
+      - TF_CLI_ARGS_apply="-auto-approve"
+    volumes:
+      - $PWD:/app
+    working_dir: /app
+    entrypoint: 
+      - sh
+      - ./scripts/execute_terraform.sh
+  plan:
+    extends: terraform
+    command: plan
+  apply:
+    extends: terraform
+    command: apply
