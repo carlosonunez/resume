@@ -30,4 +30,8 @@ RUN chown -R app:app $HOME/*
 USER app
 WORKDIR $HOME/$APP_NAME
 
+# Install gomplate
+ENV GOMPLATE_URL=https://github.com/hairyhenderson/gomplate/releases/download/v3.6.0/gomplate_linux-amd64-slim
+ADD $GOMPLATE_URL /gomplate
+
 RUN make clean

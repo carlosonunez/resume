@@ -2,3 +2,5 @@
 *.swo
 *.swp
 output/
+.terraform
+env.yaml

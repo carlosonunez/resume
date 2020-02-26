@@ -2,6 +2,7 @@ OUT_DIR=output
 IN_DIR=markdown
 STYLES_DIR=styles
 STYLE=chmduquesne
+ENV_CREATE_COMMAND=docker-compose -f docker-compose.ci.yml run --rm decrypt-gpg
 
 all: html pdf docx rtf
 
@@ -41,7 +42,7 @@ rtf: init
 		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.rtf; \
 	done
 
-init: dir version
+init: dir version render
 
 dir:
 	mkdir -p $(OUT_DIR)
@@ -53,6 +54,17 @@ version:
 	else \
 		SMART=--smart; \
 	fi \
+
+render:
+	if ! test -f env.yaml; then \
+		echo "ERROR: env.yaml not found; create it by running ${ENV_CREATE_COMMAND}."; \
+		exit 1; \
+	fi; \
+	for file in ${IN_DIR}/*_template.md; do \
+		file_name=$$(echo "$$file" | sed 's/_template//'); \
+		gomplate --file "$$file" --out "${IN_DIR}/$$file_name.md" \
+			--datasource secrets=/secrets/env.yaml; \
+	done
 
 clean:
 	rm -f $(OUT_DIR)/*
