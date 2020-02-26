@@ -3,17 +3,12 @@ Carlos Nunez
 
 ----
 
-I'm passionate about automating everything to provide maximum business value with minimum
-engineering toil. I specialize in on-premise and infrastructure automation, systems operations,
-optimizing software build and release processes and helping teams release enterprise-scale software
-to customers more quickly. My goal is to build and manage engineering teams to tackle and solve
-large problems.
-
-I'm open to 80% travel but am not open to relocation.
-
-**GitHub**: https://github.com/carlosonunez
-
-**LinkedIn**: https://linkedin.com/in/carlosindfw
+---------------------------------------  ----------------------------------------------------------
+6245 Rufe Snow Drive, Suite 280-1009                    **Github**: https://github.com/carlosonunez
+Fort Worth, TX 76148                              **LinkedIn**: https://linkedin.com/in/carlosindfw
+U.S. Citizen                                                  **Blog**: https://blog.carlosnunez.me
+(347) 762-7147                                     **80% travel preferred.** Relocation **not** ok.
+---------------------------------------  ----------------------------------------------------------
 
 ----
 
@@ -21,17 +16,53 @@ Education
 ---------
 
 2005-2010
-:   **BEng, Computer Engineering**; Stevens Institute of Technology (Hoboken, NJ)
-
-    * GPA: 3.66/4.0
+:   **BEng, Computer Engineering**. Stevens Institute of Technology (Hoboken, NJ).
+:   **GPA**: 3.7/4.0
 
 Certifications
 --------------
-|                  |                                                   |                      |
-| :-------         | :-----------                                      | ------------:        |
-| **Cloud**        | **AWS Solutions Architect (Associate)**           | expires March 2020   |
-|                  | **Google Cloud Associate Cloud Engineer**         | expires October 2020 |
-| **Cloud-native** | **CNCF Certified Kubernetes Administrator (CKA)** | expires August 2020  |
+
+**Cloud**
+: **AWS Solutions Architect (Associate)**. Expires March 2020.
+: **Google Cloud Associate Cloud Engineer**. Expires October 2020.
+
+**Cloud-Native**
+: **CNCF Certified Kubernetes Administrator (CKA)**. Expires August 2020.
+
+Core Skills
+-----------
+Languages
+: Ruby, Bash, Powershell, Makefile
+
+AWS
+: EC2, Route53, S3, CloudFront, Lambda, DynamoDB, SQS, SNS, Networking, Security (Security Groups, IAM)
+
+Containers
+: Docker, Docker Swarm, Docker Compose, Kubernetes
+
+Operating Systems
+: Linux, Windows
+
+Automation
+: Terraform, Packer, Vagrant
+
+Config Management
+: Ansible
+
+CI/CD
+: Jenkins, GitHub Actions, Travis CI
+
+UI Automation
+: Selenium, Cucumber
+
+IDE
+: vim (preferred), VSCode
+
+Other Skills
+---------------------------
+
+PCF, Java, C#, Python, Octopus Deploy, Chef, Puppet, Go, Rake, Make, Serverspec,
+Inspec, Datadog, Agile, Scrum, Kanban, XP, TDD, BDD
 
 Experience
 ----------
@@ -104,14 +135,14 @@ Older Employment History
 
 Consult my LinkedIn profile for more information.
 
-||||
-|:--|:--|:--|
-|**Two Sigma Investments**|_Systems Engineer_|2/2014 - 1/2015|
-|**Jane Street Group**|_Systems Engineer_|5/2012 - 1/2014|
-|**Macquarie Capital**|_Systems Engineer_|4/2009 - 4/2012|
-|**Medco (now Express Scripts)**|_Business Analyst_|5/2008 - 12/2008|
-|**BlackRock Solutions**|_Software Engineer (Co-op)_|9/2007 - 12/2007|
-|**Technology Analyst**|_BlackRock_|1/2007 - 5/2007|
+-------------------------   ----------------------------- ---------------------
+**Two Sigma Investments**     Systems Engineer                  2/2014 - 1/2015
+**Jane Street Group**         Systems Engineer                  5/2012 - 1/2014
+**Macquarie Capital**         Systems Engineer                  4/2009 - 4/2012
+**Medco (Express Scripts)**   Business Analyst                 5/2008 - 12/2008
+**BlackRock Solutions**       Software Engineer (Co-Op)        9/2007 - 12/2007
+**BlackRock**                 Technology Analyst                1/2007 - 5/2007
+--------------------------  ----------------------------- ---------------------
 
 Community Contributions
 --------------------
@@ -120,7 +151,7 @@ DevOpsDays Dallas 2019
 : Part of the organizing committee, where I helped review Calls for Proposals (CFPs), find speakers
   and develop the run-of-show.
 
-HashiCorp Users Group of Dallas/Fort Worth
+HashiCorp Users Group: DFW
 :   Founded the HashiCorp Users Group of Dallas/Fort Worth to bring users of HashiCorp
     products, like Terraform, Consul and Vault, and talk about all things infrastructure, code
     and DevOps.
@@ -139,7 +170,5 @@ Hobbies and Interests!
 * Breweries and wineries
 * Travel!
 
+----------------------------
 
-----
-
-ADDRESS_AND_PHONE_NUMBER_INFO

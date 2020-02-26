@@ -1,48 +1,40 @@
 OUT_DIR=output
-IN_DIR=markdown
+IN_DIR=.
 STYLES_DIR=styles
 STYLE=chmduquesne
 ENV_CREATE_COMMAND=docker-compose -f docker-compose.ci.yml run --rm decrypt-gpg
 
-all: html pdf docx rtf
+all: clean html pdf docx rtf
 
 pdf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.pdf; \
-		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
-			--from markdown --to context \
-			--variable papersize=A4 \
-			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
-		mtxrun --path=$(OUT_DIR) --result=$$FILE_NAME.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
-	done
+	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
+	echo $$FILE_NAME.pdf; \
+	pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
+		--from markdown --to context \
+		--variable papersize=A4 \
+		--output $(OUT_DIR)/$$FILE_NAME.tex ${IN_DIR}/resume.md > /dev/null; \
+	mtxrun --path=$(OUT_DIR) --result=$$FILE_NAME.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
 
 html: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.html; \
-		pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
-			--lua-filter=pdc-links-target-blank.lua \
-			--from markdown --to html \
-			--output $(OUT_DIR)/$$FILE_NAME.html $$f \
-			--metadata pagetitle=$$FILE_NAME;\
-	done
+	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
+	echo $$FILE_NAME.html; \
+	pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
+		--lua-filter=pdc-links-target-blank.lua \
+		--from markdown --to html \
+		--output $(OUT_DIR)/$$FILE_NAME.html ${IN_DIR}/resume.md \
+		--metadata pagetitle=$$FILE_NAME;\
 
 docx: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.docx; \
-		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.docx; \
-	done
+	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
+	echo $$FILE_NAME.docx; \
+	pandoc --standalone $$SMART ${IN_DIR}/resume.md --output $(OUT_DIR)/$$FILE_NAME.docx; \
 
 rtf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.rtf; \
-		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.rtf; \
-	done
+	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
+	echo $$FILE_NAME.rtf; \
+	pandoc --standalone $$SMART ${IN_DIR}/resume.md --output $(OUT_DIR)/$$FILE_NAME.rtf; \
 
-init: dir version render
+init: dir version
 
 dir:
 	mkdir -p $(OUT_DIR)
@@ -54,17 +46,6 @@ version:
 	else \
 		SMART=--smart; \
 	fi \
-
-render:
-	if ! test -f env.yaml; then \
-		echo "ERROR: env.yaml not found; create it by running ${ENV_CREATE_COMMAND}."; \
-		exit 1; \
-	fi; \
-	for file in ${IN_DIR}/*_template.md; do \
-		file_name=$$(echo "$$file" | sed 's/_template//'); \
-		gomplate --file "$$file" --out "${IN_DIR}/$$file_name.md" \
-			--datasource secrets=/secrets/env.yaml; \
-	done
 
 clean:
 	rm -f $(OUT_DIR)/*
