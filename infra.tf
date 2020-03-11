@@ -53,6 +53,7 @@ resource "aws_s3_bucket_object" "resume" {
   for_each = {
     "resume.pdf" = "latest.pdf"
     "resume.html" = "index.html" 
+    "favicon.ico" = "favicon.ico"
   }
   bucket = aws_s3_bucket.resume.id
   key = each.value
