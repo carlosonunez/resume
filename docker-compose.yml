@@ -30,3 +30,8 @@ services:
   apply:
     extends: terraform
     command: apply
+  apply-transforms:
+    extends: resume-make
+    volumes:
+      - $PWD/scripts:/scripts:ro,cached
+    entrypoint: sh scripts/apply_ogp_prefix.sh
