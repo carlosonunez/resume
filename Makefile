@@ -3,8 +3,9 @@ IN_DIR=.
 STYLES_DIR=styles
 STYLE=chmduquesne
 ENV_CREATE_COMMAND=docker-compose -f docker-compose.ci.yml run --rm decrypt-gpg
+RESUME_TILE="Carlos's Resume | resume.carlosnunez.me"
 
-all: clean html pdf docx rtf
+all: clean html pdf
 
 pdf: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
@@ -18,11 +19,11 @@ pdf: init
 html: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
 	echo $$FILE_NAME.html; \
-	pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
+	pandoc --standalone --include-in-header include/header.html \
 		--lua-filter=pdc-links-target-blank.lua \
 		--from markdown --to html \
+		--metadata pagetitle=$(RESUME_TILE) \
 		--output $(OUT_DIR)/$$FILE_NAME.html ${IN_DIR}/resume.md \
-		--metadata pagetitle=$$FILE_NAME;\
 
 docx: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
