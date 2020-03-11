@@ -25,6 +25,7 @@ Certifications
 **Cloud**
 : **AWS Solutions Architect (Associate)**. Expires March 2020.
 : **Google Cloud Associate Cloud Engineer**. Expires October 2020.
+: **Azure Administrator Associate (AZ-103)**. Expires March 2022.
 
 **Cloud-Native**
 : **CNCF Certified Kubernetes Administrator (CKA)**. Expires August 2020.
