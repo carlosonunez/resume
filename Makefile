@@ -1,8 +1,6 @@
 OUT_DIR=output
 IN_DIR=.
-STYLES_DIR=styles
 STYLE=chmduquesne
-ENV_CREATE_COMMAND=docker-compose -f docker-compose.ci.yml run --rm decrypt-gpg
 RESUME_TILE="Carlos's Resume | resume.carlosnunez.me"
 
 all: clean html pdf
@@ -10,7 +8,7 @@ all: clean html pdf
 pdf: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
 	echo $$FILE_NAME.pdf; \
-	pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
+	pandoc --standalone --template include/$(STYLE).tex \
 		--from markdown --to context \
 		--variable papersize=A4 \
 		--output $(OUT_DIR)/$$FILE_NAME.tex ${IN_DIR}/resume.md > /dev/null; \
@@ -23,7 +21,8 @@ html: init
 		--lua-filter=pdc-links-target-blank.lua \
 		--from markdown --to html \
 		--metadata pagetitle=$(RESUME_TILE) \
-		--output $(OUT_DIR)/$$FILE_NAME.html ${IN_DIR}/resume.md \
+		--output $(OUT_DIR)/$$FILE_NAME.html ${IN_DIR}/resume.md &&  \
+	sh /scripts/apply_transforms.sh
 
 docx: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
