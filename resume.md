@@ -1,6 +1,11 @@
 Carlos Nunez
 ============
 
+<div class="butterbar">
+You can also view this resume on <a href="https://github.com/carlosonunez/resume">GitHub</a>!
+Print this page to create a PDF.
+</div>
+
 ----
 
 ---------------------------------------  ----------------------------------------------------------
