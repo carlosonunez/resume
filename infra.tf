@@ -58,6 +58,7 @@ resource "aws_s3_bucket_object" "resume" {
   bucket = aws_s3_bucket.resume.id
   key = each.value
   source = "./output/${each.key}"
+  etag = filemd5("./output/${each.key}")
   acl = "public-read"
   content_type = each.key == "resume.html" ? "text/html" : "application/pdf"
 }
