@@ -7,12 +7,8 @@ create_resume() {
   docker-compose run --rm resume-make
 }
 
-apply_transforms() {
-  docker-compose run --rm apply-transforms
-}
-
 deploy_to_aws() {
   docker-compose run --rm apply
 }
 
-create_resume && apply_transforms && deploy_to_aws
+create_resume && deploy_to_aws
