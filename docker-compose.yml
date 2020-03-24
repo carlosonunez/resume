@@ -11,7 +11,7 @@ services:
       - .:/home/app/resume:delegated
       - ./scripts:/scripts:ro,delegated
   terraform:
-    image: hashicorp/terraform
+    image: hashicorp/terraform:0.12.18
     environment:
       - BUCKET
       - AWS_REGION
