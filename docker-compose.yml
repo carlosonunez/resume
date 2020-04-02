@@ -29,6 +29,7 @@ services:
     command: make
     container_name: resume-make
     image: resume-make
+    user: root
     volumes:
       - .:/home/app/resume:delegated
       - ./scripts:/scripts:ro,delegated
