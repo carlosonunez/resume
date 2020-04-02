@@ -51,7 +51,7 @@ resource "aws_cloudfront_origin_access_identity" "default" {}
 
 resource "aws_s3_bucket_object" "resume" {
   for_each = {
-    "resume.pdf" = "resume.pdf"
+    "resume.pdf" = "latest.pdf"
     "resume.html" = "index.html" 
     "favicon.ico" = "favicon.ico"
   }
