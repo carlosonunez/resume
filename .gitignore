@@ -4,3 +4,4 @@
 output/
 .terraform
 env.yaml
+.env
