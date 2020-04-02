@@ -59,7 +59,7 @@ Config Management
 : Ansible
 
 CI/CD
-: Jenkins, GitHub Actions, Travis CI
+: GitHub Actions, Jenkins, TravisCI
 
 UI Automation
 : Selenium, Cucumber
@@ -67,11 +67,14 @@ UI Automation
 IDE
 : vim (preferred), VSCode
 
+Monitoring
+: Prometheus, Grafana, Datadog
+
 Other Skills
 ---------------------------
 
 PCF, Java, C#, Octopus Deploy, Chef, Puppet, Go, Rake, Make, Serverspec,
-Inspec, Datadog, Agile, Scrum, Kanban, XP, TDD, BDD
+Inspec, Agile, Scrum, Kanban, XP, TDD, BDD
 
 Experience
 ----------
