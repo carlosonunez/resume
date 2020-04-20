@@ -38,7 +38,7 @@ Certifications
 Core Skills
 -----------
 Languages
-: Ruby, Python (learning), Bash, Powershell, Makefile
+: Ruby, Bash, Powershell
 
 AWS
 : EC2, Route53, S3, CloudFront, Lambda, DynamoDB, SQS, SNS, Networking, Security (Security Groups, IAM)
@@ -70,11 +70,21 @@ IDE
 Monitoring
 : Prometheus, Grafana, Datadog
 
-Other Skills
----------------------------
+Other
+: PCF, Java, C#, Octopus Deploy, Chef, Puppet, Go, Rake, Make, Serverspec,
+Inspec, Agile, Scrum, Kanban, XP, TDD, BDD, Makefile
 
-PCF, Java, C#, Octopus Deploy, Chef, Puppet, Go, Rake, Make, Serverspec,
-Inspec, Agile, Scrum, Kanban, XP, TDD, BDD
+Skills I'm Learning
+-------------------
+
+Languages
+: Python, JavaScript
+
+Fullstack
+: React, Node, nginx
+
+Monitoring
+: Splunk
 
 Experience
 ----------
