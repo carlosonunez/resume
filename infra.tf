@@ -54,6 +54,7 @@ resource "aws_s3_bucket_object" "resume" {
     "resume.pdf" = "latest.pdf"
     "resume.html" = "index.html" 
     "favicon.ico" = "favicon.ico"
+    "logo.png" = "logo.png"
   }
   bucket = aws_s3_bucket.resume.id
   key = each.value
