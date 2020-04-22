@@ -195,7 +195,7 @@ Hobbies and Interests!
 ----------------------------
 
 <div class="footer">
-  Resume version: <strong><a href=[VERSION_URL]>[VERSION]</a></strong>
+  Resume version: <strong><a href=https://github.com/carlosonunez/resume/commit/f29daf48813455af77dc7a59d3bda8b43f446552>f29daf48</a></strong>
 </div>
 <div class="logo">
   <img src="./logo.png">
