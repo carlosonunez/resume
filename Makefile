@@ -3,7 +3,7 @@ IN_DIR=.
 STYLE=chmduquesne
 RESUME_TILE="Carlos's Resume | resume.carlosnunez.me"
 
-all: clean apply_pre_transforms html pdf
+all: clean apply_pre_transforms html pdf docx
 
 apply_pre_transforms:
 	sh /scripts/apply_pre_transforms.sh
@@ -25,7 +25,9 @@ html: init
 docx: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
 	echo $$FILE_NAME.docx; \
-	pandoc --standalone $$SMART ${IN_DIR}/resume_post.md --output $(OUT_DIR)/$$FILE_NAME.docx; \
+	pandoc -f html -t html $(OUT_DIR)/$$FILE_NAME.html --output /tmp/resume.html; \
+	sed -i '/logo.png/d' /tmp/resume.html; \
+	pandoc -f html -t docx /tmp/resume.html --output $(OUT_DIR)/$$FILE_NAME.docx;
 
 rtf: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
