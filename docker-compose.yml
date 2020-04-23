@@ -15,6 +15,7 @@ services:
       - ./scripts:/scripts:ro,delegated
   terraform:
     image: hashicorp/terraform:0.12.18
+    env_file: .env
     environment:
       - BUCKET
       - AWS_REGION
