@@ -54,6 +54,42 @@
   border: 1px solid lightgrey;
 }
 
+.address {
+  font-family: "Cardo", serif;
+  font-size:16px;
+}
+
+@media print {
+  .address {
+    font-size: 12px;
+  }
+}
+
+.address p {
+  margin: 2px;
+}
+
+.fancy-summary {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  display: flex;
+  text-align: center;
+}
+
+@media print {
+  .fancy-summary {
+    font-size:12px;
+  }
+}
+
+.fancy-table {
+  font-family: "Cardo", serif;
+}
+
+.fancy-table tr {
+  margin: 2px;
+}
+
 .footer {
   height: 10px;
   font-size: 12px;
@@ -93,6 +129,10 @@ body {
     margin: auto;
     background: #FFFFFF;
     padding: 5px 5px 5px 5px;
+}
+
+@page {
+  margin: 1cm;
 }
 
 /* Titles of categories */
@@ -143,6 +183,41 @@ hr {
 
 table {
     width: 100%;
+}
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  dt {
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: solid 1px #d0cccc;
+  }
+  dd {
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-bottom: 2%;
+  }
+  td {
+    font-size: 12px;
+  }
+
+  .butterbar {
+    height: 24px;
+    margin-top: -10px;
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
 }
 
 @media all and (max-device-width : 800px) and (orientation : portrait) {

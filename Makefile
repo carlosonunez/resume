@@ -10,12 +10,7 @@ apply_pre_transforms:
 
 pdf: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
-	echo $$FILE_NAME.pdf; \
-	pandoc --standalone --template include/$(STYLE).tex \
-		--from markdown --to context \
-		--variable papersize=A4 \
-		--output $(OUT_DIR)/$$FILE_NAME.tex ${IN_DIR}/resume_post.md > /dev/null; \
-	mtxrun --path=$(OUT_DIR) --result=$$FILE_NAME.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
+	weasyprint -v -p $(OUT_DIR)/$$FILE_NAME.html $(OUT_DIR)/$$FILE_NAME.pdf;
 
 html: init
 	FILE_NAME=`basename ${IN_DIR}/resume.md | sed 's/.md//g'`; \
