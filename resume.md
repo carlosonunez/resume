@@ -37,7 +37,7 @@ Certifications
 
 Core Skills
 -----------
-Languages
+Programming Languages
 : Ruby, Bash, Powershell
 
 AWS
@@ -55,7 +55,7 @@ Operating Systems
 Automation
 : Terraform, Packer, Vagrant
 
-Config Management
+Configuration Management
 : Ansible
 
 CI/CD
@@ -67,17 +67,21 @@ UI Automation
 IDE
 : vim (preferred), VSCode
 
-Monitoring
+Monitoring and Observability
 : Prometheus, Grafana, Datadog
 
 Other
-: PCF, Java, C#, Octopus Deploy, Chef, Puppet, Go, Rake, Make, Serverspec,
-Inspec, Agile, Scrum, Kanban, XP, TDD, BDD, Makefile
+: PCF, Chef, Puppet, Go, Rake, Make, Serverspec, Inspec, Agile, Scrum, Kanban,
+  XP, TDD, BDD, Makefile, tcpdump, strace
+
+Outdated, but can re-learn easily
+: SCCM, SCOM, Java, C#, F#, Octopus Deploy, TeamCity, Active Directory/LDAP,
+  windbg, IDA Pro, SQL
 
 Skills I'm Learning
 -------------------
 
-Languages
+Programming Languages
 : Python, JavaScript
 
 Fullstack
@@ -86,28 +90,35 @@ Fullstack
 Monitoring
 : Splunk
 
+Database
+: PostgreSQL
+
 Experience
 ----------
 
-2017-Present
+5/2017-Present
 : **Contino**, _Technical Principal_
 : Dallas, TX (and other locations)
 
-Focused on building high-performance, cross-functional teams to help large enterprises get to
-production more quickly and providing high-quality technical solutions to tough problems. I also
-helped level-up engineers through pairing on matters such as source control management with Git,
-local application testing with Docker and Docker Compose and deploying large applications to private
-and public clouds such as AWS and Pivotal Cloud Foundry (PCF).
+At Contino, I focused on building high-performance, cross-functional teams to help large enterprises
+get to production more quickly and providing high-quality technical solutions to tough problems.
+Mentored and trained engineers through pairing and coaching on matters such as modern software
+development practices, infrastructure automation, developing and deploying to public, hybrid and
+private cloud environments and SRE fundamentals. Additionally, I collaborated with engineering
+leaders at large and highly-regulated industries on setting goals and strategic direction for major
+digital transformation projects.
 
 * **Global Financial Services Provider**: Built a cross-functional engineering team to reduce
   deployment time for a multi-million dollar application into production by several weeks.
-* **Global Consumer and Investment Bank**: Re-platformed a legacy Django web application to run in
+* **Global Consumer and Investment Bank**: Re-platformed a legacy Django web service to run in
   Docker and Pivotal Cloud Foundry, reducing deployment time to production by several weeks.
 * **Large Brokerage and Institutional Investor**: Adapted Ruby, Rspec, Cucumber and Selenium Grid
   to reduce deployment time of a major investment portfolio management web service to 10 minutes
   from 22 weeks.
 * **Large Human Capital Management Provider**: Architected a portable monitoring-as-code platform
   using Python, Bash and Datadog APIs.
+* **Business Development**: Authored and participated in pre-sales and business development through
+  proposal writing and statement-of-work creation.
 * **Community Outreach**: Authored several blog posts and talks for DevOpsDays conferences
   throughout the United States.
 
@@ -116,7 +127,8 @@ and public clouds such as AWS and Pivotal Cloud Foundry (PCF).
 : _Dallas, TX (and other locations)_
 
 At ThoughtWorks, I was responsible for providing high-quality engineering for large enterprises. My
-focus was largely on infrastructure automation and optimization in legacy, on-premise environments.
+focus was largely on infrastructure automation and systems software development against legacy,
+on-premise environments.
 
 * **Global credit card issues and credit broker**: Architected infrastructure-as-code pattern for
   website deployments using Terraform and Chef.
@@ -181,6 +193,11 @@ HashiCorp Users Group: DFW
 LinkedIn Learning
 :   Authored and recorded _DevOps Foundations: Your First DevOps Project_, a course on Lynda on
     using TDD, BDD, Docker and AWS to migrate a simple website, with tests, into the cloud.
+
+Talks and Webinars
+------------------
+
+Visit https://blog.carlosnunez.me/talks/ to see the most up-to-date list of talks that I've given.
 
 Hobbies and Interests!
 ----------------------
