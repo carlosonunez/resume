@@ -3,7 +3,7 @@ Carlos Nunez
 
 <div class="butterbar">
 You can also view this resume on <a href="https://github.com/carlosonunez/resume">GitHub</a>!
-Print this page to create a PDF.
+Add <a href="resume.pdf">"/resume.pdf"</a> to your address bar to get a PDF copy.
 </div>
 
 ----
