@@ -29,7 +29,7 @@ RUN dpkg -i pandoc-2.2.1-1-amd64.deb  && rm pandoc-*.deb
 RUN pip3 install weasyprint
 
 # Add emojis
-RUN apt-get -y install fonts-noto-color-emoji
+RUN apt-get -y install fonts-noto-color-emoji fonts-roboto
 
 #Cleanup to reduce container size
 RUN rm -rf /var/lib/apt/lists/* && \

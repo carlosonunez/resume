@@ -5,3 +5,4 @@ output/
 .terraform
 env.yaml
 .env
+resume_post.md
