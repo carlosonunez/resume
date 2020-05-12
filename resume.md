@@ -38,7 +38,7 @@ Certifications
 Core Skills
 -----------
 Programming Languages
-: Ruby, Bash, Powershell
+: Ruby, Python, Bash, Powershell
 
 AWS
 : EC2, Route53, S3, CloudFront, Lambda, DynamoDB, SQS, SNS, Networking, Security (Security Groups, IAM)
@@ -82,7 +82,7 @@ Skills I'm Learning
 -------------------
 
 Programming Languages
-: Python, JavaScript
+: JavaScript
 
 Fullstack
 : React, Node, nginx
