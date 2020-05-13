@@ -4,6 +4,7 @@ FROM ubuntu
 RUN useradd --user-group --create-home --shell /bin/false app
 
 ENV HOME=/home/app
+ENV DEBIAN_FRONTEND=noninteractive
 WORKDIR $HOME
 
 RUN apt-get update && \
