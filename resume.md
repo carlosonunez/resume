@@ -102,25 +102,26 @@ Experience
 
 At Contino, I focused on building high-performance, cross-functional teams to help large enterprises
 get to production more quickly and providing high-quality technical solutions to tough problems.
-Mentored and trained engineers through pairing and coaching on matters such as modern software
-development practices, infrastructure automation, developing and deploying to public, hybrid and
-private cloud environments and SRE fundamentals. Additionally, I collaborated with engineering
-leaders at large and highly-regulated industries on setting goals and strategic direction for major
-digital transformation projects.
+Key elements of my approach were strategic and tactical advisory to senior engineering leadership,
+providing engineers with technical leadership through mentorship, pairing, and coaching, and
+showing the "art of the possible" through demos, example applications, and technical workshops.
+Additionally, I provided thought leadership in infrastructure automation, modern software
+development practices, DevOps, and SRE through blog posts, articles, talks, and workshops.
 
-* **Global Financial Services Provider**: Built a cross-functional engineering team to reduce
-  deployment time for a multi-million dollar application into production by several weeks.
-* **Global Consumer and Investment Bank**: Re-platformed a legacy Django web service to run in
-  Docker and Pivotal Cloud Foundry, reducing deployment time to production by several weeks.
+* **Global Financial Services Provider**: Decreased build and deploys for a popular backoffice
+banking application by 87% and over $200k per release through building and leading a
+cross-functional and product-aligned engineering team.
+* **Global Consumer and Investment Bank**: Reduced team toil by over 50% and increased customer
+attrition by over 40% for a global internal PaaS offering by building an embedded SRE team. 
 * **Large Brokerage and Institutional Investor**: Adapted Ruby, Rspec, Cucumber and Selenium Grid
-  to reduce deployment time of a major investment portfolio management web service to 10 minutes
-  from 22 weeks.
+to reduce deployment time of a major investment portfolio management web service to 10 minutes
+from 22 weeks.
 * **Large Human Capital Management Provider**: Architected a portable monitoring-as-code platform
-  using Python, Bash and Datadog APIs.
+using Python, Bash and Datadog APIs.
 * **Business Development**: Authored and participated in pre-sales and business development through
-  proposal writing and statement-of-work creation.
-* **Community Outreach**: Authored several blog posts and talks for DevOpsDays conferences
-  throughout the United States.
+proposal writing and statement-of-work creation.
+* **Community Outreach**: Authored several blog posts and talks for DevOpsDays, All Day DevOps,
+and others.
 
 5/2016-5/2017
 : **ThoughtWorks**, Senior Infrastructure Consultant
@@ -193,6 +194,11 @@ HashiCorp Users Group: DFW
 LinkedIn Learning
 :   Authored and recorded _DevOps Foundations: Your First DevOps Project_, a course on Lynda on
     using TDD, BDD, Docker and AWS to migrate a simple website, with tests, into the cloud.
+    <span class="no-print">
+    Check it out:
+    <a target="_blank" href='https://www.linkedin.com/learning/devops-foundations-your-first-project/your-first-project-devopsified'>
+    https://www.linkedin.com/learning/devops-foundations-your-first-project/your-first-project-devopsified
+    </a></span>
 
 Talks and Webinars
 ------------------
