@@ -96,7 +96,13 @@ Database
 Experience
 ----------
 
-5/2017-Present
+6/2020-Present
+: **10th Magnitude**
+: Dallas, TX (and other locations)
+
+All the Azure, all the time!
+
+5/2017-6/2020
 : **Contino**, _Technical Principal_
 : Dallas, TX (and other locations)
 
