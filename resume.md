@@ -194,11 +194,10 @@ HashiCorp Users Group: DFW
 LinkedIn Learning
 :   Authored and recorded _DevOps Foundations: Your First DevOps Project_, a course on Lynda on
     using TDD, BDD, Docker and AWS to migrate a simple website, with tests, into the cloud.
-    <span class="no-print">
     Check it out:
     <a target="_blank" href='https://www.linkedin.com/learning/devops-foundations-your-first-project/your-first-project-devopsified'>
     https://www.linkedin.com/learning/devops-foundations-your-first-project/your-first-project-devopsified
-    </a></span>
+    </a>
 
 Talks and Webinars
 ------------------
