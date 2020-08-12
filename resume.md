@@ -44,7 +44,7 @@ AWS
 : EC2, Route53, S3, CloudFront, Lambda, DynamoDB, SQS, SNS, Networking, Security (Security Groups, IAM)
 
 Azure
-: ARM, VM, DNS, CDN
+: ARM, VM, DNS, CDN, AKS
 
 Containers
 : Docker, Docker Swarm, Docker Compose, Kubernetes
@@ -59,7 +59,7 @@ Configuration Management
 : Ansible
 
 CI/CD
-: GitHub Actions, Jenkins, TravisCI
+: GitHub Actions, Azure DevOps, Jenkins, TravisCI
 
 UI Automation
 : Selenium, Cucumber
