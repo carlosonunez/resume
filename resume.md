@@ -44,7 +44,7 @@ AWS
 : EC2, Route53, S3, CloudFront, Lambda, DynamoDB, SQS, SNS, Networking, Security (Security Groups, IAM)
 
 Azure
-: ARM, VM, DNS, CDN, AKS
+: ARM, VM, DNS, CDN, AKS, Azure REST APIs, vNet/NSG, Azure Policy, Azure Monitor, Azure Log Analytics
 
 Containers
 : Docker, Docker Swarm, Docker Compose, Kubernetes
