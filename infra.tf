@@ -3,6 +3,10 @@ terraform {
 }
 
 provider "aws" {
+  version = "< 3.0.0"
+}
+
+provider "aws" {
   alias = "acm"
   region = "us-east-1"
 }
