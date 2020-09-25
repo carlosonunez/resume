@@ -13,6 +13,11 @@ services:
     volumes:
       - .:/home/app/resume:delegated
       - ./scripts:/scripts:ro,delegated
+  gpg:
+    image: vladgh/gpg
+    volumes:
+      - $PWD:/app
+    working_dir: /app
   terraform:
     image: hashicorp/terraform:0.12.18
     env_file: .env
@@ -31,3 +36,21 @@ services:
   apply:
     extends: terraform
     command: apply
+  encrypt-resume:
+    extends: gpg
+    command:
+      - --batch
+      - --yes
+      - --passphrase=$RESUME_PASSWORD
+      - --output=resume_wip.gpg
+      - --symmetric
+      - resume_wip.md
+  decrypt-resume:
+    extends: gpg
+    command:
+      - '--decrypt'
+      - '--batch'
+      - "--passphrase=$RESUME_PASSWORD"
+      - '--output=.resume_wip'
+      - resume_wip.md
+
