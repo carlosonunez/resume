@@ -13,6 +13,7 @@ Add <a href="latest.pdf">"/latest.pdf"</a> to your address bar to get a PDF copy
 Fort Worth, TX 76148                              **LinkedIn**: https://linkedin.com/in/carlosindfw
 U.S. Citizen                                                  **Blog**: https://blog.carlosnunez.me
 (347) 762-7147                                     **80% travel preferred.** Relocation **not** ok.
+work [[at]] carlosnunez [[dot]] me
 ---------------------------------------  ----------------------------------------------------------
 
 ----
