@@ -33,6 +33,9 @@ resource "aws_acm_certificate" "cert" {
   lifecycle {
     create_before_destroy = true
   }
+  tags = {
+    domain-name = "resume.carlosnunez.me"
+  }
 }
 
 resource "aws_route53_record" "cert_validation" {
@@ -143,6 +146,10 @@ resource "aws_cloudfront_distribution" "resume" {
       restriction_type = "whitelist"
       locations        = ["US", "CA", "GB", "DE"]
     }
+  }
+
+  tags = {
+    domain-name = "resume.carlosnunez.me"
   }
 
   viewer_certificate {

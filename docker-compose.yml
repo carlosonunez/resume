@@ -1,5 +1,8 @@
 version: '2.2'
 services:
+  awscli:
+    image: anigeo/awscli
+    env_file: .env
   resume-make:
     build:
       context: .
@@ -53,4 +56,15 @@ services:
       - "--passphrase=$RESUME_PASSWORD"
       - '--output=.resume_wip'
       - resume_wip.md
-
+  get-temp-aws-credentials:
+    env_file: .env
+    environment:
+      - ROLE_SESSION_SUFFIX
+    extends: awscli
+    command:
+      - sts
+      - assume-role
+      - --role-arn
+      - "$AWS_ROLE_ARN"
+      - --role-session-name
+      - "resume-deploy-$ROLE_SESSION_SUFFIX"

@@ -20,8 +20,10 @@ jobs:
         env:
           ENV_PASSWORD: ${{ secrets.env_file_encryption_key }}
 
-      - name: Generate resume output iles
-        run: ./docker-compose run --rm resume-make
+      - name: Install jq
+        run: sudo apt-get install jq
 
-      - name: Update resume.carlosnunez.me
-        run: ./docker-compose run --rm terraform apply
+      - name: Deploy!
+        run: ./scripts/deploy
+        env:
+          ENV_PASSWORD: ${{ secrets.env_file_encryption_key }}
