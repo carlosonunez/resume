@@ -75,7 +75,7 @@ Monitoring and Observability
 : Prometheus, Grafana, Datadog
 
 Other
-: PCF, Chef, Puppet, Go, Rake, Make, Serverspec, Inspec, Agile, Scrum, Kanban,
+: PCF, Chef, Go, Rake, Make, Serverspec, Inspec, Agile, Scrum, Kanban,
   XP, TDD, BDD, Makefile, tcpdump, strace
 
 Outdated, but can re-learn easily
@@ -83,7 +83,8 @@ Outdated, but can re-learn easily
   windbg, IDA Pro, SQL
 
 Dislikes
-: WebSphere, WebSphere Commerce, VMware vRealize Automation, Rational, SVN
+: WebSphere, WebSphere Commerce, VMware vRealize Automation, Rational, SVN,
+  Puppet
 
 Skills I'm Learning
 -------------------
