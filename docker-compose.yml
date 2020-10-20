@@ -54,8 +54,8 @@ services:
       - '--decrypt'
       - '--batch'
       - "--passphrase=$RESUME_PASSWORD"
-      - '--output=.resume_wip'
-      - resume_wip.md
+      - '--output=resume_wip.md'
+      - resume_wip.gpg
   get-temp-aws-credentials:
     env_file: .env
     environment:
