@@ -82,6 +82,9 @@ Outdated, but can re-learn easily
 : SCCM, SCOM, Java, C#, F#, Octopus Deploy, TeamCity, Active Directory/LDAP,
   windbg, IDA Pro, SQL
 
+Dislikes
+: WebSphere, WebSphere Commerce, VMware vRealize Automation, Rational, SVN
+
 Skills I'm Learning
 -------------------
 
