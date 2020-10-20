@@ -47,8 +47,11 @@ AWS
 Azure
 : ARM, VM, DNS, CDN, AKS, Azure REST APIs, vNet/NSG, Azure Policy, Azure Monitor, Azure Log Analytics
 
-Containers
-: Docker, Docker Swarm, Docker Compose, Kubernetes
+Containers (Docker)
+: Docker, Docker Swarm, Docker Compose
+
+Cloud-Native (Kubernetes)
+: Hand-Provisioned Kubernetes, Azure Kubernetes Service, OpenShift
 
 Operating Systems
 : Linux, Windows
