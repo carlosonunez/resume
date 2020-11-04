@@ -108,11 +108,15 @@ Experience
 : **10th Magnitude**
 : Dallas, TX (and other locations)
 
+**10th Magnitude was acquired by Cognizant Technology Solutions in September 2020.**
+
 All the Azure, all the time!
 
 5/2017-6/2020
 : **Contino**, _Technical Principal_
 : Dallas, TX (and other locations)
+
+**Contino was acquired by Cognizant Technology Solutions in October 2019.**
 
 At Contino, I focused on building high-performance, cross-functional teams to help large enterprises
 get to production more quickly and providing high-quality technical solutions to tough problems.
