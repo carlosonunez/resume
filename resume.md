@@ -39,7 +39,7 @@ Certifications
 Core Skills
 -----------
 Programming Languages
-: Ruby, Python, Bash, Powershell
+: Golang (Go), Ruby, Python, Bash, Powershell
 
 AWS
 : EC2, Route53, S3, CloudFront, Lambda, DynamoDB, SQS, SNS, Networking, Security (Security Groups, IAM)
@@ -84,7 +84,7 @@ Outdated, but can re-learn easily
 
 Dislikes
 : WebSphere, WebSphere Commerce, VMware vRealize Automation, Rational, SVN,
-  Puppet
+  Puppet, Java
 
 Skills I'm Learning
 -------------------
@@ -104,13 +104,33 @@ Database
 Experience
 ----------
 
-6/2020-Present
+12/2020-Present
+: **VMware**, _Solutions Architect, #TeamTanzu_
+: Dallas, TX (and other locations)
+
+6/2020-11/2020
 : **10th Magnitude**
 : Dallas, TX (and other locations)
 
 **10th Magnitude was acquired by Cognizant Technology Solutions in September 2020.**
 
-All the Azure, all the time!
+At 10th Magnitude, I helped large retailers and life science enterprises migrate into and
+more efficiently leverage Microsoft Azure. As a Senior Cloud Architect, my responsibilities were
+two-fold: to lead the technical delivery of new Azure Landing Zones and to mentor and
+level-up junior engineers largely through pairing.
+
+- Architected, refactored, and shipped a tool-agnostic implementation of 10th Magnitude's Azure Landing Zone framework.
+  This implementation reduced new landing zone deployment times by over 40% and reduced its deployment
+  process from 20+ steps to five steps. **Technologies leveraged**: Python, Ansible, Terraform,
+  ARM, Docker, Azure DevOps Pipelines, Azure CLI, and more.
+- **National Fortune-500 Omnichannel Retailer.** Migrated a critical non-production OpenShift 3.8
+  cluster to Azure Kubernetes service. Also significantly improved its infrastructure code coverage
+  and CI/CD process. **Technologies leveraged**: Bash, Terraform, Ansible, Azure DevOps pipelines,
+  Jenkins, Docker, k3s, Azure CLI, and more.
+- **National Fortune-500 Omnichannel Retailer.** Architected and built several reliability and infrastructure
+  testing tools through pairing and mobbing, including an automated sanity checking pipeline for self-hosted
+  and containerized Azure DevOps agents and automated AKS post-provisioning tests.
+ 
 
 5/2017-6/2020
 : **Contino**, _Technical Principal_
