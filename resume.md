@@ -9,8 +9,8 @@ Add <a href="latest.pdf">"/latest.pdf"</a> to your address bar to get a PDF copy
 ----
 
 ---------------------------------------  ----------------------------------------------------------
-6245 Rufe Snow Drive, Suite 280-1009                    **Github**: https://github.com/carlosonunez
-Fort Worth, TX 76148                              **LinkedIn**: https://linkedin.com/in/carlosindfw
+5215 N O'Connor Blvd, Suite 11                          **Github**: https://github.com/carlosonunez
+Irving, TX 75039                                  **LinkedIn**: https://linkedin.com/in/carlosindfw
 U.S. Citizen                                                  **Blog**: https://blog.carlosnunez.me
 (347) 762-7147                                     **80% travel preferred.** Relocation **not** ok.
 work [[at]] carlosnunez [[dot]] me
