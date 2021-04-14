@@ -3,6 +3,18 @@ IN_DIR=.
 STYLE=chmduquesne
 RESUME_TILE="Carlos's Resume | resume.carlosnunez.me"
 
+encrypt_env:
+	ENV_PASSWORD='$(ENV_PASSWORD)' docker-compose -f docker-compose.ci.yml run --rm encrypt-env
+
+decrypt_env:
+	ENV_PASSWORD='$(ENV_PASSWORD)' docker-compose -f docker-compose.ci.yml run --rm decrypt-env
+
+encrypt_resume:
+	RESUME_PASSWORD='$(RESUME_PASSWORD)' docker-compose run --rm encrypt-resume
+
+decrypt_resume:
+	RESUME_PASSWORD='$(RESUME_PASSWORD)' docker-compose run --rm decrypt-resume
+
 all: clean apply_pre_transforms html pdf docx
 
 apply_pre_transforms:
