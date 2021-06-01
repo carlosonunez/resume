@@ -17,7 +17,7 @@ create_resume() {
 
 get_aws_credentials() {
   output=$(ROLE_SESSION_SUFFIX=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8) \
-    docker-compose run --rm get-temp-aws-credentials | \
+    $DOCKER_COMPOSE_BINARY run --rm get-temp-aws-credentials | \
     sed -n '/^{/,$p')
   access_key=$(echo "$output" | jq -r .Credentials.AccessKeyId)
   secret_key=$(echo "$output" | jq -r .Credentials.SecretAccessKey)
@@ -30,11 +30,11 @@ get_aws_credentials() {
 deploy_to_aws() {
   if dry_run_enabled
   then
-    docker-compose run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
+    $DOCKER_COMPOSE_BINARY run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
       -e AWS_SECRET_ACCESS_KEY=$APP_AWS_SECRET_ACCESS_KEY \
       -e AWS_SESSION_TOKEN=$APP_AWS_SESSION_TOKEN plan
   else
-    docker-compose run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
+    $DOCKER_COMPOSE_BINARY run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
       -e AWS_SECRET_ACCESS_KEY=$APP_AWS_SECRET_ACCESS_KEY \
       -e AWS_SESSION_TOKEN=$APP_AWS_SESSION_TOKEN apply
   fi
