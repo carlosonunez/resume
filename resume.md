@@ -9,10 +9,10 @@ Add <a href="latest.pdf">"/latest.pdf"</a> to your address bar to get a PDF copy
 ----
 
 ---------------------------------------  ----------------------------------------------------------
-5215 N O'Connor Blvd, Suite 11                          **Github**: https://github.com/carlosonunez
-Irving, TX 75039                                  **LinkedIn**: https://linkedin.com/in/carlosindfw
+5826 New Territory Blvd #1116                           **Github**: https://github.com/carlosonunez
+Sugar Land, TX 77479                              **LinkedIn**: https://linkedin.com/in/carlosindfw
 U.S. Citizen                                                  **Blog**: https://blog.carlosnunez.me
-(347) 762-7147                                     **80% travel preferred.** Relocation **not** ok.
+(469) 382-9361                                     **80% travel preferred.** Relocation **not** ok.
 work [[at]] carlosnunez [[dot]] me
 ---------------------------------------  ----------------------------------------------------------
 
