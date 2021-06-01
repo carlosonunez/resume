@@ -31,3 +31,4 @@ jobs:
         run: ./scripts/deploy
         env:
           ENV_PASSWORD: ${{ secrets.env_file_encryption_key }}
+          DOCKER_COMPOSE_BINARY: ./docker-compose

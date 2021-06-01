@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 DRY_RUN="${DRY_RUN:-false}"
+DOCKER_COMPOSE_BINARY="${DOCKER_COMPOSE_BINARY:-docker-compose}"
 export ENV_PASSWORD="${ENV_PASSWORD?Please provide an environment password.}"
 dry_run_enabled() {
   test "$(echo "$DRY_RUN" | tr [:upper:] [:lower:])" == "true"
@@ -8,7 +9,7 @@ dry_run_enabled() {
 create_resume() {
   if ! dry_run_enabled
   then
-    docker-compose run --rm resume-make
+    $DOCKER_COMPOSE_BINARY run --rm resume-make
   else
     >&2 echo "WARNING: Skipping because dry run is enabled."
   fi
