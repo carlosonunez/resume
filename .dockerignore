@@ -7,3 +7,6 @@ resume.tex
 *.swp
 *.docx
 *.rtf
+.env
+.env.*
+!.env.example

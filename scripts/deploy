@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
 DRY_RUN="${DRY_RUN:-false}"
-DOCKER_COMPOSE_BINARY="${DOCKER_COMPOSE_BINARY:-docker-compose}"
 export ENV_PASSWORD="${ENV_PASSWORD?Please provide an environment password.}"
+
+exec_docker_compose() {
+  if test -f ./docker-compose
+  then
+    ./docker-compose $*
+  else
+    docker-compose $*
+  fi
+}
+
 dry_run_enabled() {
   test "$(echo "$DRY_RUN" | tr [:upper:] [:lower:])" == "true"
 }
@@ -9,7 +18,7 @@ dry_run_enabled() {
 create_resume() {
   if ! dry_run_enabled
   then
-    $DOCKER_COMPOSE_BINARY run --rm resume-make
+    exec_docker_compose run --rm resume-make
   else
     >&2 echo "WARNING: Skipping because dry run is enabled."
   fi
@@ -17,7 +26,7 @@ create_resume() {
 
 get_aws_credentials() {
   output=$(ROLE_SESSION_SUFFIX=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8) \
-    $DOCKER_COMPOSE_BINARY run --rm get-temp-aws-credentials | \
+    exec_docker_compose run --rm get-temp-aws-credentials | \
     sed -n '/^{/,$p')
   access_key=$(echo "$output" | jq -r .Credentials.AccessKeyId)
   secret_key=$(echo "$output" | jq -r .Credentials.SecretAccessKey)
@@ -30,11 +39,11 @@ get_aws_credentials() {
 deploy_to_aws() {
   if dry_run_enabled
   then
-    $DOCKER_COMPOSE_BINARY run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
+    exec_docker_compose run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
       -e AWS_SECRET_ACCESS_KEY=$APP_AWS_SECRET_ACCESS_KEY \
       -e AWS_SESSION_TOKEN=$APP_AWS_SESSION_TOKEN plan
   else
-    $DOCKER_COMPOSE_BINARY run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
+    exec_docker_compose run --rm -e AWS_ACCESS_KEY_ID=$APP_AWS_ACCESS_KEY_ID \
       -e AWS_SECRET_ACCESS_KEY=$APP_AWS_SECRET_ACCESS_KEY \
       -e AWS_SESSION_TOKEN=$APP_AWS_SESSION_TOKEN apply
   fi
