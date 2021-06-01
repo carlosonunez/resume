@@ -106,7 +106,7 @@ Experience
 
 12/2020-Present
 : **VMware**, _Solutions Architect, #TeamTanzu_
-: Dallas, TX (and other locations)
+: Houston, TX (and other locations)
 
 6/2020-11/2020
 : **10th Magnitude**
@@ -219,6 +219,9 @@ Consult my LinkedIn profile for more information.
 
 Community Contributions
 --------------------
+
+DevOpsDays Houston 2021
+: Part of the organizing committee.
 
 DevOpsDays Dallas 2019
 : Part of the organizing committee, where I helped review Calls for Proposals (CFPs), find speakers
